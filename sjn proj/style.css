@@ -32,7 +32,7 @@ body {
   margin-left: 4px;
   box-shadow: rgb(0, 0, 0) 0px 18px 36px -18px inset;
   border-radius: 2px;
-  width: 4%;
+  width: 5%;
   margin-left: 73px;
   margin-top: 25px;
   font-size: large;
@@ -143,7 +143,7 @@ body {
   padding: 7px;
 }
 .table {
-  margin-left: 300px;
+  margin-left: 200px;
   /* display: flex; */
   width: 80%;
   border-width: 10px;
@@ -174,4 +174,10 @@ body {
 .table tbody tr{
     color: aliceblue;
     font-size: 25px;
+}
+
+/* login page styling*/
+.form{
+  background-color;
+  ma
 }
