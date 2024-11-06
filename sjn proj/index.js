@@ -19,7 +19,7 @@ function Display() {
 // Add methods to display prototype
 Display.prototype.add = function (book) {
     console.log("Adding to UI");
-    tableBody = document.getElementById('tableBody');
+    let tableBody = document.getElementById('tableBody');
     let uiString = `<tr>
                         <td>${book.name}</td>
                         <td>${book.author}</td>
@@ -91,7 +91,28 @@ function libraryFormSubmit(e) {
         display.add(book);
         display.clear();
         display.show('success', 'Your book has been successfully added')
-    }
+    
+     // Making AJAX call to submit form data
+     let formData = new FormData();
+     formData.append('bookName', book.name);
+     formData.append('author', book.author);
+     formData.append('type', book.type);
+     
+     fetch('submit.php', {
+         method: 'POST',
+         body: formData
+     })
+     .then(response => response.text())
+     .then(data => {
+         console.log("Server Response:", data);
+     })
+     .catch(error => {
+         console.error('Error:', error);
+     });
+
+ }
+
+    
     else {
         // Show error to the user
         display.show('danger', 'Sorry you cannot add this book');

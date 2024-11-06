@@ -11,23 +11,27 @@
 </head>
 <body>
 <nav class="navbar">
-        <a class="navlog" href="index.php">Joey Library</a>
+        <a class="navlog" href="index.html">Joey Library</a>
 
         <input placeholder="search" class="sinput">
         <button class="search">Search</button>
 
     </nav>
-<container class="form">
-    <br>
-    <h1 class="login">Login</h1><br>
-    <h3 class="user">Username</h3>
-    <input type="text" placeholder="joey" class="iuser"><br>
-    <h3 class="pass">Password</h3>
-    <input type="text" placeholder="Password" class="ipass"><br>
-    <button class="logbtn">login</button><br>
-    <h2 class="que">Do you have an account..</h2>
-    <button class="signbtn">Sign Up</button>
-  </container>
+
+    <div class="login-container">
+      <h1>Login</h1>
+      
+      <form action="/login" method="POST">
+          <!-- Username Field -->
+          <input type="text" name="username" placeholder="Username" required>
+          
+          <!-- Password Field -->
+          <input type="password" name="password" placeholder="Password" required>
+          
+          <!-- Login Button -->
+          <button type="submit">Login</button>
+      </form>
+
 
 </body>
 </html>
