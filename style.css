@@ -1,0 +1,196 @@
+body {
+  background-image: url(bg\ 1.jpg);
+  background-size: cover;
+  object-fit: contain;
+  margin: 0 0 0 0;
+}
+.main {
+  padding: 20px;
+}
+.navlog {
+  font-size: 20px;
+  margin: 5px;
+
+  padding: 5px;
+}
+.name {
+  color: white;
+  box-shadow: rgb(0, 0, 0) 0px 18px 36px -18px inset;
+  border-radius: 2px;
+  font-size: large;
+}
+.A {
+  color: white;
+  margin-left: 4px;
+  box-shadow: rgb(0, 0, 0) 0px 18px 36px -18px inset;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+.T {
+  color: white;
+  margin-left: 4px;
+  box-shadow: rgb(0, 0, 0) 0px 18px 36px -18px inset;
+  border-radius: 2px;
+  width: 5%;
+  margin-left: 73px;
+  margin-top: 25px;
+  font-size: large;
+}
+.h1 {
+  color: rgba(245, 245, 245, 0.939);
+  box-shadow: rgb(0, 0, 0) 0px 30px 60px -21px inset,
+    rgb(0, 0, 0) 0px 18px 36px -28px inset;
+  padding: 4px;
+  width: 18%;
+  border-radius: 4px;
+  font-size: 38px;
+  margin-top: 50px;
+}
+.navbar {
+  padding: 5px;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgb(0, 0, 0) 0px 30px 60px -1px inset,
+    rgb(0, 0, 0) 0px 18px 36px 5px inset;
+}
+
+.sinput {
+  margin-left: 850px;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+.search {
+  padding: 10px;
+  background-color: black;
+  color: bisque;
+  border-color: bisque;
+  border-radius: 2px;
+}
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+.form2 {
+  display: flex;
+  justify-content: space-around;
+}
+.iname {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-color: rgb(16, 14, 10);
+}
+.iauthor {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 8px;
+  margin-right: 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-color: rgb(9, 8, 6);
+}
+
+.choice {
+  margin-bottom: 20px;
+  width: 30%;
+  margin-left: 284px;
+}
+
+.fiction {
+  color: white;
+  box-shadow: rgb(0, 0, 0) 0px 18px 36px -18px inset;
+  font-size: large;
+  border-radius: 3px;
+}
+.program {
+  color: white;
+  box-shadow: rgb(0, 0, 0) 0px 18px 36px -18px inset;
+  font-size: large;
+  border-radius: 3px;
+}
+.cook {
+  color: white;
+  box-shadow: rgb(0, 0, 0) 0px 18px 36px -18px inset;
+  font-size: large;
+  border-radius: 3px;
+}
+.btn {
+  background-color: black;
+  color: white;
+  margin-left: 310px;
+  padding: 11px;
+  border-radius: 5px;
+}
+
+.hr {
+  border-color: black;
+  margin-bottom: 10px;
+}
+.your {
+  margin-top: 50px;
+  color: rgb(253, 253, 253);
+  padding: 4px;
+  border-radius: 5px;
+  width: 15%;
+  margin-left: 200px;
+  box-shadow: rgb(0, 0, 0) 0px 18px 36px -1px inset;
+  padding: 7px;
+}
+.table {
+  margin-left: 200px;
+  
+  width: 69%;
+  border-width: 10px;
+  
+  padding: 20px;
+  background: rgb(197, 197, 197);
+  backdrop-filter: blur(5px); 
+  border-radius: 8px;
+  height: 1rem;
+  margin-bottom: 15px;
+}
+
+.tr {
+  font-display: flex;
+  justify-content: left;
+ 
+}
+
+
+/* General styling for alert messages */
+.alert {
+  padding: 15px;
+  margin: 0 0;
+  width: 50%;
+  margin-left: 300px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;             
+  transform: translateY(-20px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.alert.show {
+  opacity: 1;               
+  transform: translateY(0);   
+}
+
+
+.alert-success {
+  background-color: #ffad29;
+  border-left: 6px solid #fff7f7;
+}
+
+
+.alert-danger {
+  background-color: #f44336; 
+  border-left: 6px solid #bdbdbd;
+}
